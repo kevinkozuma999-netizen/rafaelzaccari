@@ -14,3 +14,24 @@ body{background:var(--paper)}.site-header{background:rgba(248,248,247,.96);borde
 .company-grid .company:hover{transform:translateY(-4px);border-color:#999}
 .duo-photo{background-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 32%,#050505 60%),url('/dafni.jpg');background-size:100% 100%,auto 100%;background-position:center,left center;background-repeat:no-repeat}
 @media(max-width:760px){.company-grid{max-width:none;margin-bottom:60px}.duo-photo{background-image:linear-gradient(0deg,#050505 0%,rgba(0,0,0,.98) 18%,rgba(0,0,0,0) 55%),url('/dafni.jpg');background-size:100% 100%,auto 72%;background-position:center,center top;background-repeat:no-repeat}}
+
+/* Acentos dourados editoriais: somente palavras e destaques selecionados */
+:root{--gold:#c8a449}
+.gold-highlight,.section-head h2 .gold-highlight,.duo-content h2 .gold-highlight,.big-heading .gold-highlight,.ecosystem h2 .gold-highlight,.footer h2 .gold-highlight{color:#c8a449!important}
+.revenue-copy h2 em,.start-wrap h1 em{color:#c8a449}
+.story blockquote span{color:#c8a449}
+.chapter.featured .chapter-no{color:#c8a449}
+.gold-dot{color:#c8a449}
+/* Manter CTAs, superfícies e pequenos rótulos neutros */
+
+/* Atualização fotográfica: palestras e Dafni wide */
+@media(min-width:761px){
+.duo-photo{background-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.12) 39%,rgba(0,0,0,.74) 59%,#050505 83%),url('/dafni-wide.jpg')!important;background-size:100% 100%,cover!important;background-position:center,center center!important;background-repeat:no-repeat!important}
+}
+.talk{position:relative;isolation:isolate;background:#080a10!important}
+.talk::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(3,5,10,.96) 0%,rgba(3,5,10,.87) 31%,rgba(3,5,10,.43) 64%,rgba(3,5,10,.28) 100%),url('/palestras.jpg') center 43%/cover no-repeat}
+.talk-inner{position:relative;z-index:1}
+@media(max-width:760px){
+.duo-photo{background-image:linear-gradient(0deg,#050505 0%,rgba(0,0,0,.96) 13%,rgba(0,0,0,.02) 60%),url('/dafni-wide.jpg')!important;background-size:100% 100%,auto 70%!important;background-position:center,center top!important;background-repeat:no-repeat!important}
+.talk::before{background:linear-gradient(0deg,rgba(3,5,10,.94),rgba(3,5,10,.7)),url('/palestras.jpg') 62% center/cover no-repeat}
+}
